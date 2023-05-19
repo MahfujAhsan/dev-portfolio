@@ -24,6 +24,8 @@ export default function Home() {
                 src={dev}
                 alt='Developer_Image'
                 className='w-9/12 mr-auto rounded-full h-9/12'
+                priority
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
             </div>
             <div className='w-1/2 flex flex-col item-center self-center'>
