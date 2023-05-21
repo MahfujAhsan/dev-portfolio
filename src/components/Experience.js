@@ -33,18 +33,27 @@ const Experience = () => {
     return (
         <div className='mt-64'>
             <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>
-                Experience
+              Industrial  Experience
             </h2>
 
             <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
                 <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:[w-2px] md:left-[30px] xs:left-[20px]' />
                 <ul className='flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Details
-                        position="Software Developer"
+                        position="Full Stack Developer"
                         company="bPlugins LLC."
-                        time="2023 - Present"
-                        address="Uttara, Dhaka - 1230"
+                        time="Jan, 2023 - Present"
+                        address="Uttara, Dhaka - 1230, BD"
                         work="MERN Stack Development"
+                        companyLink="#"
+                    />
+
+                    <Details
+                        position="React Developer (Intern)"
+                        company="QuickStay Private Ltd."
+                        time="Aug, 2022 - Dec, 2022"
+                        address="Gurugaon, Hyrana, India"
+                        work="Full Stack Development"
                         companyLink="#"
                     />
                 </ul>

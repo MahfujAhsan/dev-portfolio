@@ -5,7 +5,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from '/public/images/projects/crypto-screener-cover-image.jpg'
+import project1 from '/public/images/projects/task-dashboard.png'
+import project2 from '/public/images/projects/tech-note.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -85,7 +86,7 @@ const Project = ({ title, type, img, link, github }) => {
                         <GithubIcon />
                     </Link>
 
-                    
+
                 </div>
             </div>
         </article>
@@ -104,40 +105,48 @@ const projects = () => {
                 <Layout className='pt-16 xl:py-8 xl:px-6'>
                     <AnimatedText text="Imagination Trumps Knowledge!" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
                     <div className='w-full grid grid-cols-12 gap-16 sm:gap-8 md:w-auto'>
-                            <div className='col-span-12'>
-                                <FeaturedProject
-                                    img={project1}
-                                    title="ToDo Dashboard"
-                                    summery="lorem20"
-                                    link="/"
-                                    type="Featured Project"
-                                    github="/"
-                                />
-                            </div>
-
-                            <div className='col-span-6 sm:col-span-12'>
-                                <Project
-                                    img={project1}
-                                    title="ToDo Dashboard"
-                                    summery="lorem20"
-                                    link="/"
-                                    type="Featured Project"
-                                    github="/"
-                                />
-                            </div>
-                            <div className='col-span-6 sm:col-span-12'>
-                                <Project
-                                    img={project1}
-                                    title="ToDo Dashboard"
-                                    summery="lorem20"
-                                    link="/"
-                                    type="Featured Project"
-                                    github="/"
-                                />
-                            </div>
+                        <div className='col-span-12'>
+                            <FeaturedProject
+                                img={project1}
+                                title="Task_Manager"
+                                summery="
+                                • Secured API & safe user login authorized by JWT.
+                                • Attractive UI with awesome user experience,(Registration, Toast Notification, Error Handling, Animation etc).
+                                • All CRUD Operations built with ExpressJS using mongoose database.
+                                "
+                                link="https://task-dashboard-2ce0d.web.app"
+                                type="ToDo Dashboard"
+                                github="https://github.com/MahfujAhsan/task-dashboard"
+                            />
                         </div>
-                        
-                    
+
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
+                                img={project2}
+                                title="techNotes"
+                                summery="
+                                • Registered & Role base Login with Secured API.
+                                • Scalable solution by using ReduxJS, Mongoose & Express.
+                                • Role base actions with Dynamic User Interface. 
+                                "
+                                link="https://technotesclient.onrender.com"
+                                type="Business Management System"
+                                github="/"
+                            />
+                        </div>
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
+                                img={project1}
+                                title="ToDo Dashboard"
+                                summery="lorem20"
+                                link="/"
+                                type="Project"
+                                github="/"
+                            />
+                        </div>
+                    </div>
+
+
                 </Layout>
             </main>
         </>
