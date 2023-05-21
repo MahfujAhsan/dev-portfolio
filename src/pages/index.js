@@ -17,30 +17,30 @@ export default function Home() {
         <meta name="description" content="Software Developer" />
       </Head>
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
-        <Layout className='pt-0 md:p-16 sm:p-8'>
-          <div className="flex lg:flex-col items-center justify-between w-full">
-            <div className='w-1/2 md:w-full'>
+        <Layout className='pt-0 lg:p-16 sm:p-8'>
+          <div className="flex items-center justify-between md:flex-col xl:gap-8 w-full xl:w-full">
+            <div className='w-1/2 lg:w-8/12 '>
               <Image
                 src={dev}
                 alt='Developer_Image'
-                className='w-9/12 mr-auto rounded-full h-9/12 lg:hidden md:inline-block md:w-full'
+                className='w-9/12 mr-auto rounded-lg h-auto xl:w-11/12 xl:mx-auto'
                 priority
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
             </div>
             <div className='w-1/2 flex flex-col item-center self-center lg:w-full lg:text-center'>
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
-              <p className='my-4 text-base font-medium'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
+              <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left xl:!text-3xl xl:!text-center xl:!mt-2 lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
+              <p className='my-4 text-base font-medium md:text-sm sm:text-xs xl:text-center'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
                 Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
-              <div className='flex items-center self-start mt-2 lg:self-center'>
+              <div className='flex items-center self-start mt-2 xl:self-center'>
                   <Link href="/dummy.pdf" target={"_blank"}
-                  className='flex items-center bg-[#303F60] text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-[#C62228] dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light'
+                  className='flex items-center bg-[#303F60] text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-[#C62228] dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:px-4 md:text-base'
                   download={true}
                   >
                     Resume <LinkArrow className="w-6 ml-1"/>
                     </Link>
                   <Link href="mailto:mahfujur.rahman1@outlook.com" target={"_blank"}
-                  className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light'
+                  className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'
                   >
                     Contact
                     </Link>
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
-        <div className='absolute right-8 bottom-8 inline-block w-24 '>
+        <div className='absolute right-8 bottom-8 inline-block w-24 xl:hidden'>
           <Image src={lightbulb} alt='M_R' className='w-full h-auto'/>
         </div>
       </main>

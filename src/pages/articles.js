@@ -94,7 +94,7 @@ const articles = () => {
             <main className='w-full mb-16 flex flex-col items-center  justify-center overflow-hidden dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText
-                        text="Words Can Change The World!" className='mb-16'
+                        text="Words Can Change The World!" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8'
                     />
                     <ul className='grid grid-cols-2 gap-16'>
                         <FeaturedArticle
