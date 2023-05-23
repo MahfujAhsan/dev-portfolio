@@ -21,7 +21,7 @@ export default function Home() {
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className='pt-0 lg:p-16 sm:p-0'>
           <div className="flex items-center justify-center flex-col md:flex-row">
-            <div className='w-full md:1/2 lg:w-8/12'>
+            <div className='w-full'>
               <Image
                 src={dev}
                 alt='Developer_Image'
@@ -30,7 +30,7 @@ export default function Home() {
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
             </div>
-            <div className='w-1/2 flex flex-col item-center self-center lg:w-full lg:text-center'>
+            <div className='flex flex-col item-center self-center lg:w-full lg:text-center'>
               <AnimatedText text="Code is Poetry!" className='!text-6xl !text-left xl:!text-3xl xl:!text-center xl:!mt-2 lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs xl:text-center'>HeY, This is Mahfujur_Rahman. As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
               <div className='flex items-center self-start mt-2 xl:self-center'>
