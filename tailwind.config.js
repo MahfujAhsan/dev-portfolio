@@ -51,19 +51,19 @@ module.exports = {
         "2xl": "1535px",
         // => @media (max-width: 1535px) { ... }
 
-        xl: { max: "1279px" },
+        xl: "1279px",
         // => @media (max-width: 1279px) { ... }
 
-        lg: { max: "1023px" },
+        lg: max: "1023px",
         // => @media (max-width: 1023px) { ... }
 
-        md: { max: "767px" },
+        md:"767px",
         // => @media (max-width: 767px) { ... }
 
         sm: "639px",
         // => @media (max-width: 639px) { ... }
 
-        xs: { max: "479px" },
+        xs: "479px",
         // => @media (max-width: 479px) { ... }
       },
     },
