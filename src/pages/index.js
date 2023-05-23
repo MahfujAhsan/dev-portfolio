@@ -25,7 +25,7 @@ export default function Home() {
               <Image
                 src={dev}
                 alt='Developer_Image'
-                className='w-9/12 mr-auto rounded-lg h-auto xl:w-11/12 xl:mx-auto'
+                className='w-9/12 md:w-full mr-auto rounded-lg h-auto xl:w-11/12 xl:mx-auto'
                 priority
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
