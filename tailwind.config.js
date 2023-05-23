@@ -48,7 +48,7 @@ module.exports = {
           "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 40px)",
       },
       screens: {
-        "2xl": { max: "1535px" },
+        "2xl": "1535px",
         // => @media (max-width: 1535px) { ... }
 
         xl: { max: "1279px" },
