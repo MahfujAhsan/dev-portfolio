@@ -48,22 +48,22 @@ module.exports = {
           "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 40px)",
       },
       screens: {
-        "2xl": "{min: 1535px"},
+        "2xl": {"min": "1535px"},
         // => @media (max-width: 1535px) { ... }
 
-        xl: " {min: 1279px"},
+        "xl": {"min": "1279px"},
         // => @media (max-width: 1279px) { ... }
 
-        lg: max: "{min: 1023px"},
+        "lg": {"min": "1023px"},
         // => @media (max-width: 1023px) { ... }
 
-        md:"{min:767px"},
+        "md": {"min":"767px"},
         // => @media (max-width: 767px) { ... }
 
-        sm: "{min: 639px"},
+        "sm": {"min": "639px"},
         // => @media (max-width: 639px) { ... }
 
-        xs: "{min: 479px"},
+        "xs": {"min": "479px"},
         // => @media (max-width: 479px) { ... }
       },
     },
