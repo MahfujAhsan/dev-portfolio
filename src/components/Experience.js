@@ -31,7 +31,7 @@ const Experience = () => {
         }
     );
     return (
-        <div className='mt-24'>
+        <div className='mt-24 sm:!my-16'>
             <h2 className='font-bold text-8xl mb-32 w-full text-center lg:text-6xl md:!text-4xl md:mb-16'>
               Industrial  Experience
             </h2>
