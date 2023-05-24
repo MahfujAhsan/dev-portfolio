@@ -48,6 +48,7 @@ module.exports = {
           "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 40px)",
       },
       screens: {
+<<<<<<< HEAD
         "2xl": { "max": "1535px" },
         // => @media (max-width: 1535px) { ... }
 
@@ -64,6 +65,24 @@ module.exports = {
         // => @media (max-width: 639px) { ... }
 
         "xs": { "max": "479px" },
+=======
+        "2xl": {"min": "1535px"},
+        // => @media (max-width: 1535px) { ... }
+
+        "xl": {"min": "1279px"},
+        // => @media (max-width: 1279px) { ... }
+
+        "lg": {"min": "1023px"},
+        // => @media (max-width: 1023px) { ... }
+
+        "md": {"min":"767px"},
+        // => @media (max-width: 767px) { ... }
+
+        "sm": {"min": "639px"},
+        // => @media (max-width: 639px) { ... }
+
+        "xs": {"min": "479px"},
+>>>>>>> d75dee75991b97c4439ae9333b32d442e9e39e73
         // => @media (max-width: 479px) { ... }
       },
     },
