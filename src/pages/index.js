@@ -31,7 +31,7 @@ export default function Home() {
               />
             </div>
             <div className='flex-1 flex flex-col item-center self-center lg:w-full text-center  sm:mt-6 md:mt-10'>
-              <AnimatedText text="Code is Poetry!" className=' !text-left  text-6xl xl:text-4xl lg:!text-center' />
+              <AnimatedText text="Code is Poetry!" className='!text-left  text-6xl xl:text-4xl lg:!text-center' />
               <p className='my-4 sm:text-base text-xl !text-left lg:!text-center'>HeY, This is Mahfujur_Rahman. As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                   <Link href="/dummy.pdf" target={"_blank"}

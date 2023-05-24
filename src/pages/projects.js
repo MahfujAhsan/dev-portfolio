@@ -14,7 +14,7 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summery, img, link, github }) => {
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
+        <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 md:!w-10/12 md:!mx-auto'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2  sm:h-[102%] xs:w-full xs:rounded-[1.5rem]' />
             <Link href={link}
                 className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'
@@ -56,10 +56,10 @@ const FeaturedProject = ({ type, title, summery, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
     return (
-        <article className='w-full flex flex-col items-start justify-between rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4'>
+        <article className='w-full flex flex-col items-start justify-between rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4 md:!w-10/12 mx-auto'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 xs:h-[102%] xs:w-[101%] xs:rounded-[1.5rem]' />
             <Link href={link}
-                className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'
+                className='w-1/2 cursor-pointer overflow-hidden rounded-lg md:!w-full'
             >
                 <FramerImage src={img} alt={title} className='w-full h-auto'
                     whileHover={{ scale: 1.05 }}
@@ -102,9 +102,9 @@ const projects = () => {
             </Head>
             <TransitionEffect />
             <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
-                <Layout className='pt-16 xl:py-8 xl:px-6'>
-                    <AnimatedText text="Imagination Trumps Knowledge!" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
-                    <div className='w-full grid grid-cols-12 gap-16 sm:gap-8 md:w-auto'>
+                <Layout className='pt-16 xl:py-8 xl:px-6 w-auto flex-none'>
+                    <AnimatedText text="Imagination Trumps Knowledge!" className='text-6xl xl:text-4xl lg:!text-center lg:!mb-8 py-8 lg:!py-0' />
+                    <div className='w-full grid grid-cols-12 gap-16 sm:gap-8'>
                         <div className='col-span-12'>
                             <FeaturedProject
                                 img={project1}
@@ -120,7 +120,7 @@ const projects = () => {
                             />
                         </div>
 
-                        <div className='col-span-6 sm:col-span-12'>
+                        <div className='col-span-6 md:col-span-12'>
                             <Project
                                 img={project2}
                                 title="techNotes"
@@ -134,7 +134,7 @@ const projects = () => {
                                 github="/"
                             />
                         </div>
-                        <div className='col-span-6 sm:col-span-12'>
+                        <div className='col-span-6 md:col-span-12'>
                             <Project
                                 img={project1}
                                 title="ToDo Dashboard"
