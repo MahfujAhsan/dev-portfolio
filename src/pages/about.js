@@ -51,7 +51,7 @@ const about = () => {
                             <p className="font-medium">
                                 Hey,
                                 <br />
-                                I'm Mahfujur Rahman.
+                                This is Mahfujur Rahman.
                             </p>
                             <p className='font-medium'>
                                 This is introducing you to a self-learner/self-motivated programmer. I am a Full Stack developer with builds websites and web applications.
