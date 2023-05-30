@@ -7,6 +7,7 @@ import Link from 'next/link'
 import React from 'react'
 import project1 from '/public/images/projects/task-dashboard.png'
 import project2 from '/public/images/projects/tech-note.png'
+import project3 from '/public/images/projects/computer-manager.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -17,7 +18,7 @@ const FeaturedProject = ({ type, title, summery, img, link, github }) => {
         <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2  sm:h-[102%] xs:w-full xs:rounded-[1.5rem]' />
             <Link href={link}
-                className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:!w-9/12'
+                className=' cursor-pointer overflow-hidden rounded-lg w-full'
             >
                 <FramerImage src={img} alt={title} className='w-full h-auto'
                     whileHover={{ scale: 1.05 }}
@@ -27,7 +28,7 @@ const FeaturedProject = ({ type, title, summery, img, link, github }) => {
                 />
             </Link>
 
-            <div className='w-1/2 flex flex-col items-start justify-between pl-6  lg:!w-9/12 lg:pl-0 lg:pt-6'>
+            <div className=' flex flex-col items-start justify-between pl-6  w-full lg:pl-0 lg:pt-6'>
                 <span className='text-primary font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
                 <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
                     <h2 className='my-2 text-left w-full text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
@@ -59,7 +60,7 @@ const Project = ({ title, type, img, link, github }) => {
         <article className='w-full flex flex-col items-start justify-between rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 xs:h-[102%] xs:w-[101%] xs:rounded-[1.5rem]' />
             <Link href={link}
-                className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'
+                className=' cursor-pointer overflow-hidden rounded-lg lg:w-full'
             >
                 <FramerImage src={img} alt={title} className='w-full h-auto'
                     whileHover={{ scale: 1.05 }}
@@ -69,7 +70,7 @@ const Project = ({ title, type, img, link, github }) => {
                 />
             </Link>
 
-            <div className='w-1/2 flex flex-col items-start justify-between mt-4 lg:w-full lg:pl-0'>
+            <div className=' flex flex-col items-start justify-between mt-4 lg:w-full lg:pl-0'>
                 <span className='text-primary font-medium text-lg dark:text-primaryDark lg:!text-sm md:text-base'>{type}</span>
                 <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
                     <h2 className='my-2 text-left w-full text-3xl font-bold lg:!text-xl'>{title}</h2>
@@ -131,17 +132,17 @@ const projects = () => {
                                 "
                                 link="https://technotesclient.onrender.com"
                                 type="Business Management System"
-                                github="/"
+                                github="https://github.com/MahfujAhsan/technote-client"
                             />
                         </div>
                         <div className='col-span-6 md:col-span-12'>
                             <Project
-                                img={project1}
-                                title="ToDo Dashboard"
-                                summery="lorem20"
-                                link="/"
-                                type="Project"
-                                github="/"
+                                img={project3}
+                                title="Computer Manager"
+                                summery="Developed modern UI with ReactJS, Tailwindcss & several react component libraries. Back-end implemented with node, express, MongoDB. App-Features: Firebase Login, Authentication verified by JSON Web Token, Dynamic Admin & User Dashboard, Ordered List, Customers Review, Inventory Management, Product Management, Stripe payment method, Secured APIs, and Multi-themed UI."
+                                link="https://computer-manager-3faf4.web.app/"
+                                type="Manufacturer Company"
+                                github="https://github.com/MahfujAhsan/computer-manager-client"
                             />
                         </div>
                     </div>

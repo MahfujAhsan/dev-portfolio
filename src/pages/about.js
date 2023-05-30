@@ -48,16 +48,24 @@ const about = () => {
                     <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
                         <div className='col-span-3 flex flex-col items-start justify-start lg:!items-center lg:col-span-8 lg:order-2 text-left lg:text-center'>
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>Biography</h2>
+                            <p className="font-medium">
+                                Hey,
+                                <br />
+                                I'm Mahfujur Rahman.
+                            </p>
                             <p className='font-medium'>
-                                HeY, This is Mahfujur_Rahman.
+                                This is introducing you to a self-learner/self-motivated programmer. I am a Full Stack developer with builds websites and web applications.
                             </p>
 
                             <p className='my-4 font-medium'>
-                                I am a Self Taught Programmer.
+
+                                I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. I’m also a people person. I love meeting new people and learning about their lives and their backgrounds.
+
+                                
                             </p>
 
                             <p className='font-medium'>
-                                I build modern functional web applications.
+                                I am highly organized. I always take notes, and I use a series of tools to help myself stay on top of deadlines. So, Seeking a role as a developer to continue my passion & for doing something creative will be crazy.
                             </p>
                         </div>
                         
