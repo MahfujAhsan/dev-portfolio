@@ -39,7 +39,7 @@ const Education = () => {
             </h2>
 
             <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
-                <motion.div style={{ scaleY: scrollYProgress }} className='absolute top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:[w-2px] left-[30px] xs:!left-[20px]' />
+                <motion.div style={{ scaleY: scrollYProgress }} className='absolute top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:[w-2px] left-[28px] xs:!left-[20px]' />
                 <ul className='flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Details
                         type="Think in a Redux Way"
