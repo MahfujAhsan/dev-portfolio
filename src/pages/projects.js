@@ -8,6 +8,7 @@ import React from 'react'
 import project1 from '/public/images/projects/task-dashboard.png'
 import project2 from '/public/images/projects/tech-note.png'
 import project3 from '/public/images/projects/computer-manager.png'
+import project4 from '/public/images/projects/bistro-boss.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -57,7 +58,7 @@ const FeaturedProject = ({ type, title, summery, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
     return (
-        <article className='w-full flex flex-col items-start justify-between rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4'>
+        <article className='w-full flex flex-col items-start justify-between rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4 h-full'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 xs:h-[102%] xs:w-[101%] xs:rounded-[1.5rem]' />
             <Link href={link}
                 className=' cursor-pointer overflow-hidden rounded-lg lg:w-full'
@@ -108,18 +109,20 @@ const projects = () => {
                     <div className='w-full grid grid-cols-12 gap-y-16 sm:gap-y-8 lg:!w-11/12 lg:!mx-auto gap-x-8 sm:!gap-x-0'>
                         <div className='col-span-12'>
                             <FeaturedProject
-                                img={project1}
-                                title="Task_Manager"
+                                img={project4}
+                                title="Bistro Boss"
                                 summery="
                                 • Secured API & safe user login authorized by JWT.
                                 • Attractive UI with awesome user experience,(Registration, Toast Notification, Error Handling, Animation etc).
                                 • All CRUD Operations built with ExpressJS using mongoose database.
                                 "
-                                link="https://task-dashboard-2ce0d.web.app"
-                                type="ToDo Dashboard"
-                                github="https://github.com/MahfujAhsan/task-dashboard"
+                                link="https://bistro-boss-restro.web.app/"
+                                type="Restaurant Management System"
+                                github="https://github.com/MahfujAhsan/restro-boss"
                             />
                         </div>
+
+                        
 
                         <div className='col-span-6 md:col-span-12'>
                             <Project
@@ -137,12 +140,38 @@ const projects = () => {
                         </div>
                         <div className='col-span-6 md:col-span-12'>
                             <Project
+                                img={project1}
+                                title="Task_Manager"
+                                summery="
+                                • Secured API & safe user login authorized by JWT.
+                                • Attractive UI with awesome user experience,(Registration, Toast Notification, Error Handling, Animation etc).
+                                • All CRUD Operations built with ExpressJS using mongoose database."
+                                link="https://task-dashboard-2ce0d.web.app"
+                                type="ToDo Dashboard"
+                                github="https://github.com/MahfujAhsan/task-dashboard"
+                            />
+                        </div>
+                        <div className='col-span-6 md:col-span-12'>
+                            <Project
                                 img={project3}
                                 title="Computer Manager"
                                 summery="Developed modern UI with ReactJS, Tailwindcss & several react component libraries. Back-end implemented with node, express, MongoDB. App-Features: Firebase Login, Authentication verified by JSON Web Token, Dynamic Admin & User Dashboard, Ordered List, Customers Review, Inventory Management, Product Management, Stripe payment method, Secured APIs, and Multi-themed UI."
                                 link="https://computer-manager-3faf4.web.app/"
                                 type="Manufacturer Company"
                                 github="https://github.com/MahfujAhsan/computer-manager-client"
+                            />
+                        </div>
+
+                        <div className='col-span-6 md:col-span-12'>
+                            <Project
+                                img={project4}
+                                title="Bistro Boss"
+                                summery="• Authentication & Authorized (Role) base Login with Secured API.
+                                •Scalable solution by using ReduxJS, Mongoose & Express.
+                                •All CRUD oparetions with Error Handling."
+                                link="https://bistro-boss-restro.web.app/"
+                                type="Restaurant Management System"
+                                github="https://github.com/MahfujAhsan/restro-boss"
                             />
                         </div>
                     </div>
